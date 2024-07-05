@@ -3,15 +3,15 @@ library(ggplot2)
 library(dplyr)
 
 #initial values for SIR model
-t <- 300       #time for model (unit in days)
-b <- 0.184   #value for beta (contact rate)
-g <- 0.1   #value for gamma (recovery rate)
-P <- 100000   #value for assumed population
+t <- #time for model (unit in days)
+b <- #value for beta (contact rate)
+g <- #value for gamma (recovery rate)
+P <- #value for assumed population
 
 #input initial values into the model
 SIR.model <- function(t, b, g)
   require(deSolve)
-  initial_values <- c(S=1-1e-6, I=1e-6, R=0) #initial population for three classes
+  initial_values <- c(S= , I= , R= ) #initial population for three classes
   parameters <- c(beta=b, gamma=g)
   time <- seq(0, t, by=t/(5*length(1:t)))
 
